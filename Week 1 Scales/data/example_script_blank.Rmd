@@ -17,19 +17,19 @@ library(tidyverse)
 ### IPIP20
 ```{r}
 # load data
-ipip20 <- read_csv("~/Dropbox (Brown)/Summer 2018/RA Files/Week 1 Scales/data/ipip20.csv")
+ipip20 <- read_csv("https://raw.githubusercontent.com/emoriebeck/PMaD-Summer-RAs/master/Week%201%20Scales/data/ipip20.csv")
 ```
 
 ### IPIP50  
 ```{r}
 # load data
-ipip50 <- read_csv("~/Dropbox (Brown)/Summer 2018/RA Files/Week 1 Scales/data/ipip50.csv")
+ipip50 <- read_csv("https://raw.githubusercontent.com/emoriebeck/PMaD-Summer-RAs/master/Week%201%20Scales/data/ipip50.csv")
 ```
 
 ### IPIP100
 ```{r}
 # load data
-ipip100 <- read_csv("~/Dropbox (Brown)/Summer 2018/RA Files/Week 1 Scales/data/ipip100.csv")
+ipip100 <- read_csv("https://raw.githubusercontent.com/emoriebeck/PMaD-Summer-RAs/master/Week%201%20Scales/data/ipip100.csv")
 ```
 
 # Inter-Item Correlations  
@@ -43,7 +43,7 @@ a <- ipip20 %>% select(contains("Agreeableness"))
 
 ## Reverse Coding
 ```{r}
-load("~/Dropbox (Brown)/Summer 2018/RA Files/Week 1 Scales/data/keys.RData")
+load(url("https://github.com/emoriebeck/PMaD-Summer-RAs/blob/master/Week%201%20Scales/data/keys.RData?raw=true"))
 
 keys20 <- ipip20_items$rev_code
 
